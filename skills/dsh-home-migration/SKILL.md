@@ -1,4 +1,4 @@
-﻿---
+---
 name: dsh-home-migration
 description: 系统盘吃紧导致工具 ENOSPC 时，把 DSH_HOME 安全迁到数据盘并保留原路径可读。
 ---
@@ -42,3 +42,4 @@ description: 系统盘吃紧导致工具 ENOSPC 时，把 DSH_HOME 安全迁到�
 
 - 迁移后系统盘余量回升是可验证的收益指标；但注意区分**本次操作带来的释放**与其他缓存（例如显卡着色器缓存）的自然变化，别把功劳记错。
 - 只迁移数据目录，不要顺手改 profile 配置。
+- ``$DSH_HOME`` 迁移会一并带走 `skills/`、`storages/`、`sessions/` 等数据目录；经 Junction 旧路径仍可读，写入都落到数据盘真身。

@@ -1,6 +1,6 @@
-﻿# DSH Token 调优技能集
+# DSH Token 调优技能集
 
-DeepSeek Harness（DSH）桌面版的**降本 / 排障 / 环境治理**经验包，拆成 5 个可独立引用的 skill。
+DeepSeek Harness（DSH）桌面版的**降本 / 排障 / 环境治理**经验包，拆成 6 个可独立引用的 skill。
 每个 skill 都自带「适用场景 → 前置条件 → 操作 → 验证 → 风险与边界 → 回滚 → 备注」结构，可直接复制进你的 skills 目录。
 
 许可证：Apache-2.0。
@@ -16,6 +16,7 @@ DeepSeek Harness（DSH）桌面版的**降本 / 排障 / 环境治理**经验包
 | [`dsh-plugin-mount-verify`](skills/dsh-plugin-mount-verify/SKILL.md) | 判断插件到底挂载没有（别看 HTTP 状态码） | 装完插件不确定是否生效 |
 | [`dsh-slow-turn-forensics`](skills/dsh-slow-turn-forensics/SKILL.md) | 一次 turn 为什么慢 / 为什么被中止，用会话日志定量取证 | turn 卡顿、超时、被 abort |
 | [`dsh-home-migration`](skills/dsh-home-migration/SKILL.md) | 系统盘吃紧导致 `ENOSPC` 时，迁移 `$DSH_HOME` 的正确姿势 | C 盘余量告急、工具写文件失败 |
+| [`dsh-skill-install`](skills/dsh-skill-install/SKILL.md) | 给 DSH 加自定义技能：放哪、frontmatter 怎么写、分类归谁管 | 想新增/维护一个自定义 skill |
 
 ## 通用红线
 
@@ -32,6 +33,7 @@ skills/
   dsh-plugin-mount-verify/SKILL.md
   dsh-slow-turn-forensics/SKILL.md
   dsh-home-migration/SKILL.md
+  dsh-skill-install/SKILL.md
 ```
 
 - 整包用：把 `skills/` 整个拷进你的 skills 目录。
