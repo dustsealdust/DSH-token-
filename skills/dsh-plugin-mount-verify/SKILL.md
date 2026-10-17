@@ -1,4 +1,4 @@
-﻿---
+---
 name: dsh-plugin-mount-verify
 description: 用落盘证据判断 DSH 插件是否真的挂载生效，避免被通用 401 鉴权误导。
 ---
@@ -39,3 +39,4 @@ DSH 对**任何** `/api/*` 都返回 `401 unauthorized`（通用鉴权，未带 
 
 - 「401 是正常的」这一条最值得写进脑子，能省掉大量无效探测。
 - 别为了验证去翻源码或解压打包产物，落盘时间就足够。
+- **单元名映射实例**：`dsh-dfy`（大肥鱼桌宠）→ `$DSH_HOME/storages/dsh_whale_pet.json`。插件包的 `name` 与 storages 单元文件名并不一致，别找错文件。

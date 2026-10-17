@@ -2,6 +2,12 @@
 
 本仓库的技能按「目录即版本」维护：每个 skill 一个目录，README 索引表与目录必须同步。
 
+## v1.1.1 — 2026-10-17
+
+- `dsh-profile-plugin-install`：补已验证案例与 24h 新鲜度封锁实例（`dsh-context@0.72.0`）
+- `dsh-plugin-mount-verify`：补插件单元名映射实例（`dsh-dfy` → `storages/dsh_whale_pet.json`）
+- `dsh-home-migration`：补旧副本清理时机
+
 ## v1.1.0 — 2026-10-17
 
 - 新增 `dsh-skill-install`：DSH 用户级技能安装与维护（存放位置、frontmatter、分类归谁管、避坑）

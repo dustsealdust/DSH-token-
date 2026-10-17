@@ -1,4 +1,4 @@
-﻿---
+---
 name: dsh-profile-plugin-install
 description: 在 desktop profile 被 GUI 插件管理器独占的情况下，手工用 pnpm 把插件装进 profile 并接入 bundles。
 ---
@@ -53,3 +53,5 @@ pnpm add <pkg> \
 
 - 迁移过 `$DSH_HOME` 的机器尤其容易踩 store 路径坑，命令里的两个路径前缀是**硬性**的。
 - GitHub 源包（npm 上没有）同样适用，安装时给完整仓库地址。
+- **已验证案例**：npm 上的 `@zoria-lind/dsh-token-optimizer@2.2.2`；npm 上没有的走 GitHub 源（如 `github:LeslieWylie/dsh-ops-kit`），装完同样写进 `dependencies` 与 `dsh.profile.bundles`。
+- **新鲜度封锁实例**：实测被 24h 封锁拦下的是 `dsh-context@0.72.0`；`pnpm-workspace.yaml` 的 `minimumReleaseAgeExclude` 条目压不住它，所以 `--config.minimumReleaseAge=0` 是硬性的。
